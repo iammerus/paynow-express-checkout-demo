@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition-duration: 0.5s;
+  transition-property: height, opacity, transform;
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  overflow: hidden;
+}
+
+.slide-left-enter,
+.slide-right-leave-active {
+  opacity: 0;
+  transform: translate(2em, 0);
+}
+
+.slide-left-leave-active,
+.slide-right-enter {
+  opacity: 0;
+  transform: translate(-2em, 0);
+}
+
+.badge-nav .v-badge__badge {
+  margin-top: 5px;
+}
+
+.v-progress-circular {
+  left: 50%;
+  margin-top: 50px;
+}
+
